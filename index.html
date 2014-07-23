@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="d3.min.js">
+ </script>
+ <meta charset="utf-8">
+ <title>JS Bin</title>
+</head>
+<body>
+
+  
+<div id="svgpathSVGdata"></div>
+
+<script type="text/javascript">
+
+var divElem = d3.select("#svgpathSVGdata");
+
+var svgcanvas = divElem.append("svg:svg")
+.attr("width", 600)
+.attr("height", 850);
+ 
+   var image = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "1567")
+   .attr("height","1906")
+   .attr("xlink:href","figura3.png")
+   .attr("transform","matrix(0.24 0 0 0.24 110 191.8901)")
+
+   
+  var path21mon = svgcanvas.append("svg:path")
+  .attr("id","a1")
+  .attr("d","M427.833,435.89l-2.333-0.166l-1.667-0.5l0.167-2l0.166-1l-3-1.001 	c0,0-1.333-0.333-1.333-1.166s0.375-2.986,0.375-2.986l-0.375-2.514c0,0,0-1.5,0-2s0-3.833,0-3.833v-4.167 	c0,0-0.167-0.667-0.667-0.667s-4.458-1.154-4.458-1.154l-5.042-0.846c0,0-2.333-0.333-2.833-0.667s-4.333-2-4.333-2l-3-1.167 	c0,0-1.333-0.666-2-0.833s-2.334-1.167-2.834-1.5s-0.999-0.5-1.666-1.167s-1.5-1.5-2-1.667s-1.834-0.833-1.834-0.833 	c-0.5,1-0.791,2.347-0.791,2.347l-1.209,0.32l-0.513,0.801L386,405.391l-2-1.167c0,0-0.167-0.5-0.167-1s0.167-1.5-0.5-1.5 	s-4.833,0-4.833,0l-0.834,0.167l-1.791,0.346l-2.209-0.346h-1.333l-1.777,0.543l-0.89-1.209l0.334-1.167l1-1l-3-0.333l-1.167-0.167 	c0,0-0.833-1-1.333-1s-1.25-0.141-2.125-0.487s-2-0.667-2-0.667l-0.375-1.18l1.5-1.167l0.666-1l1.167,0.5")
+  .style("stroke-width", 1)
+  .style("stroke", "#1910C6")
+  .style("fill", "none")
+  .style("display","none");
+
+    var path24tue = svgcanvas.append("svg:path")
+  .attr("id","a2")
+  .attr("d","M427.833,435.89l-2.333-0.166l-1.667-0.5l0.167-2l0.166-1l-3-1.001 	c0,0-1.333-0.333-1.333-1.166s0.375-2.986,0.375-2.986l-0.375-2.514c0,0,0-1.5,0-2s0-3.833,0-3.833v-4.167 	c0,0-0.167-0.667-0.667-0.667s-4.458-1.154-4.458-1.154l-5.042-0.846c0,0-2.333-0.333-2.833-0.667s-4.333-2-4.333-2l-3-1.167 	c0,0-1.333-0.666-2-0.833s-2.334-1.167-2.834-1.5s-0.999-0.5-1.666-1.167s-1.5-1.5-2-1.667s-1.834-0.833-1.834-0.833 	c-0.5,1-0.791,2.347-0.791,2.347l-1.209,0.32l-0.513,0.801L386,405.391l-2-1.167c0,0-0.167-0.5-0.167-1s0.167-1.5-0.5-1.5 	s-4.833,0-4.833,0l-0.834,0.167l-1.791,0.346l-2.209-0.346h-1.333l-1.777,0.543l-0.89-1.209l0.334-1.167l1-1l-3-0.333l-1.167-0.167 	c0,0-0.833-1-1.333-1s-1.25-0.141-2.125-0.487s-2-0.667-2-0.667l-0.375-1.18l1.5-1.167l0.666-1l1.167,0.5")
+  .style("stroke-width", 1)
+  .style("stroke", "#DBAD2C")
+  .style("fill", "none")
+  .style("display","none");
+  
+    var path21tue = svgcanvas.append("svg:path")
+  .attr("id","a3")
+  .attr("d","M363.781,394.944c0,0-1.406-0.646-1.406-0.258 	s0,2.841,0,2.841l2.045,0.774l2.046-0.517l0.383,2.195l0.128,0.904c0,0,1.918-0.646,2.301-0.646c0.384,0,1.79,0,1.79,0l-0.512,2.195 	c0,0,1.022,0.388,2.045,0.388c1.023,0,3.579-0.129,4.347,0c0.767,0.129,5.752,0.646,5.752,0.646L385,402.95l1.278,3.229l2.045-1.937 l1.15-1.679c0,0,1.534,0.904,2.302,1.55c0.767,0.646,4.09,2.324,4.09,2.324s3.835,2.195,4.219,2.325 c0.383,0.129,2.939,1.808,2.939,1.808s2.685,1.163,3.451,1.42c0.768,0.258,5.497,0.517,5.497,0.517s2.557,0.904,3.067,1.163 	c0.512,0.258,4.091,1.162,4.091,1.162l1.534,1.292l-0.256,6.457c0,0,0.256,3.356,0.256,3.744s0,2.324,0,2.841 	s0.127,2.712,0.127,2.712l1.79,0.259l2.301,1.032l-0.256,1.163v1.42c0,0,2.173,0.646,2.685,0.775c0.512,0.129,3.323,1.42,3.323,1.42 s3.451,0.259,3.835,0.517c0.384,0.259,4.091,1.808,4.474,2.066c0.384,0.258,1.662,0.388,2.429,0.774 	c0.768,0.388,2.429,1.033,2.813,1.033s1.15,0.388,1.15,0.388")
+  .style("stroke-width", 1)
+  .style("stroke", "#1910C6")
+  .style("fill", "none")
+  .style("display","none");  
+  
+  
+   var mon21 = svgcanvas.append("svg:path")
+   .attr("id","ID21mon")
+   .attr("d","M338.438,501.234c0.016,0.003,0.061,0.006,0.128,0.008     c0.594,0.018,2.935-0.008,2.935-0.008s-0.031,2.594,0,2.844s0,3.313,0,3.313s-0.531,2.5-0.531,2.625s-0.125,1.844-0.188,2s-0.125,1.688-0.156,2.063s-0.188,0.719-0.188,0.719H339c0,0-0.125-2.469-0.188-2.563s-0.063-1.563-0.063-1.969s-0.031-1.469-0.063-2.25s-0.031-3.313-0.031-3.313s0.031-1.938,0-2.219L338.438,501.234z")
+  .style("stroke-width", 1)
+  .style("stroke", "red")
+  .style("fill", "red")
+  .style("display","inline");
+     
+     var tue24= svgcanvas.append("svg:path")
+   .attr("id","ID24tue")
+   .attr("d","M362.344,302.578l0.281,1.844l0.156,2.438l0.406,2.063    c0,0,0.281,2.969,0.281,3.188s-0.344,1-0.344,1h-1.719h-0.375v-4.125l0.438-2.031c0,0,0.188-1.75,0.281-1.813    s0.063-1.625,0.063-1.625l0.156-0.563L362.344,302.578z")
+  .style("stroke-width", 1)
+  .style("stroke", "red")
+  .style("fill", "red")
+  .style("display","inline");
+ 
+     var tue21= svgcanvas.append("svg:path")
+   .attr("id","ID21tue")
+   .attr("d","M346.25,299.984h1.313l0.375,4.625l0.5,3.375l0.438,3.813v1.313h-3.938v-5.125l0.313-1.438l0.25-2.125l0.5-2L346.25,299.984z")
+  .style("stroke-width", 1)
+  .style("stroke", "red")
+  .style("fill", "red")
+  .style("display","inline"); 
+ 
+var image24 = svgcanvas.append("svg:image")
+   .attr ("id", "fot24")
+   .attr("overflow","visible")
+   .attr("width", "300")
+   .attr("height","245")
+   .attr("xlink:href","24.png")
+   .attr("transform","matrix(0.24 0 0 0.24 257.5 412.8901)")  
+   .style("display","none");
+         
+var image21 = svgcanvas.append("svg:image")
+   .attr ("id", "fot21")
+   .attr("overflow","visible")
+   .attr("width", "300")
+   .attr("height","245")
+   .attr("xlink:href","21.png")
+   .attr("transform","matrix(0.24 0 0 0.24 257.5 413.3901)")
+   .style("display","none");
+  
+  
+ var totalLength = path21mon.node().getTotalLength();
+ mon21.on("click", function(){
+ path21mon
+ .attr("stroke-dasharray", totalLength + " " + totalLength)
+ .attr("stroke-dashoffset", totalLength)
+ .transition()
+    .duration(2000)
+    .ease("linear")
+    .attr("stroke-dashoffset",-100)
+    .style("display","inline");
+  path24tue
+    .style("display","none");
+    image24
+	.style("display","none");
+	image21
+	.style("display","inline");
+  })
+ 
+      
+ var totalLength = path24tue.node().getTotalLength();
+ tue24.on("click", function(){
+ path24tue.attr("stroke-dasharray", totalLength + " " + totalLength)
+ .attr("stroke-dashoffset", totalLength)
+ .transition()
+    .duration(2000)
+    .ease("linear")
+    .attr("stroke-dashoffset",-100)
+    .style("display","inline");
+      path21mon
+    .style("display","none");
+   	image24
+	.style("display","inline");
+	image21
+	.style("display","none");
+    })
+ 
+  var totalLength = path21tue.node().getTotalLength();
+ tue21.on("click", function(){
+ path21tue.attr("stroke-dasharray", totalLength + " " + totalLength)
+ .attr("stroke-dashoffset", totalLength)
+ .transition()
+    .duration(2000)
+    .ease("linear")
+    .attr("stroke-dashoffset",-120 )
+    .style("display","inline");
+      path21mon
+    .style("display","none");
+   path24tue
+    .style("display","none"); 
+   	image24
+	.style("display","none");
+	image21
+	.style("display","inline");	
+    })
+ 
+ 
+</script>
+</body>
+</html>
+
