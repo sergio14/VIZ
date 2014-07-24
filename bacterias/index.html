@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <script src="d3.min.js"></script>
+  <title>JS Bin</title>
+</head>
+<body>
+
+<div id="svgpathSVGdata"></div>
+
+<script type="text/javascript">
+
+var divElem = d3.select("#svgpathSVGdata");
+var svgcanvas = divElem.append("svg:svg")
+.attr("width", 2500)
+.attr("height", 1850);
+ 
+ var image = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "2447")
+   .attr("height","1806")
+   .attr("xlink:href","images/base2.png")
+   .attr("transform","matrix(0.24 0 0 0.24 3.5 203.3901)");
+   
+  var grupo1 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "513")
+   .attr("height","418")
+   .attr("xlink:href","images/grupo1.png")
+   .attr("transform","matrix(0.24 0 0 0.24 80 514.8901)")
+	.style("display","none");   
+   
+     var grupo2 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "115")
+   .attr("height","257")
+   .attr("xlink:href","images/grupo2.png")
+   .attr("transform","matrix(0.24 0 0 0.24 137 475.8901)") 
+   .style("display","none");
+   
+    var grupo3 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "258")
+   .attr("height","240")
+   .attr("xlink:href","images/grupo3.png")
+   .attr("transform","matrix(0.24 0 0 0.24 180 553.3901)")  
+   .style("display","none");
+   
+    var grupo4 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "147")
+   .attr("height","205")
+   .attr("xlink:href","images/grupo4.png")
+   .attr("transform","matrix(0.24 0 0 0.24 237 561.3901)") 
+   .style("display","none");
+   
+    var grupo5 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "197")
+   .attr("height","264")
+   .attr("xlink:href","images/grupo5.png")
+   .attr("transform","matrix(0.24 0 0 0.24 271 549.8901)")  
+   .style("display","none");
+   
+    var grupo6 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "182")
+   .attr("height","209")
+   .attr("xlink:href","images/grupo6.png")
+   .attr("transform","matrix(0.24 0 0 0.24 343.5 554.8901)")
+	.style("display","none");
+   
+    var grupo7 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "231")
+   .attr("height","222")
+   .attr("xlink:href","images/grupo7.png")
+   .attr("transform","matrix(0.24 0 0 0.24 418 553.3901)") 
+   .style("display","none");
+   
+    var grupo8 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "318")
+   .attr("height","114")
+   .attr("xlink:href","images/grupo8.png")
+   .attr("transform","matrix(0.24 0 0 0.24 368.5 460.3901)") 
+   .style("display","none");
+   
+    var grupo9 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "227")
+   .attr("height","135")
+   .attr("xlink:href","images/grupo9.png")
+   .attr("transform","matrix(0.24 0 0 0.24 382.5 430.2241)")
+   .style("display","none");
+   
+   var grupo10 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "156")
+   .attr("height","193")
+   .attr("xlink:href","images/grupo10.png")
+   .attr("transform","matrix(0.24 0 0 0.24 373.5 395.8901)")
+   .style("display","none");
+   
+   var grupo11 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "227")
+   .attr("height","150")
+   .attr("xlink:href","images/grupo11.png")
+   .attr("transform","matrix(0.24 0 0 0.24 326.5 338.8901)") 
+   .style("display","none");
+   
+    var grupo12 = svgcanvas.append("svg:image")
+   .attr("overflow","visible")
+   .attr("width", "236")
+   .attr("height","275")
+   .attr("xlink:href","images/grupo12.png")
+   .attr("transform","matrix(0.24 0 0 0.24 299.5 541.3901)") 
+   .style("display","none");
+   
+   
+   
+   
+   
+   
+   var cir1 = svgcanvas.append("svg:circle")
+   .attr("cx","154.833")
+   .attr("cy","552.056")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+
+	
+
+   var cir2 = svgcanvas.append("svg:circle")
+   .attr("cx","166.167")
+   .attr("cy","544.056")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+ 
+    var cir3 = svgcanvas.append("svg:circle")
+   .attr("cx","175.833")
+   .attr("cy","549.056")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+
+    var cir4 = svgcanvas.append("svg:circle")
+   .attr("cx","234.333")
+   .attr("cy","550.223")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+   
+    var cir5 = svgcanvas.append("svg:circle")
+   .attr("cx","296")
+   .attr("cy","547.889")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+ 
+    var cir6 = svgcanvas.append("svg:circle")
+   .attr("cx","295.667")
+   .attr("cy","540.222")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+   
+    var cir7 = svgcanvas.append("svg:circle")
+   .attr("cx","418.334")
+   .attr("cy","549.223")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+   
+   
+    var cir8 = svgcanvas.append("svg:circle")
+   .attr("cx","367.33")
+   .attr("cy","466.889")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+   
+    var cir9 = svgcanvas.append("svg:circle")
+   .attr("cx","378.663")
+   .attr("cy","460.885")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+   
+   
+    var cir10 = svgcanvas.append("svg:circle")
+   .attr("cx","369.997")
+   .attr("cy","447.551")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+   
+   
+    var cir11 = svgcanvas.append("svg:circle")
+   .attr("cx","323.663")
+   .attr("cy","377.223")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+
+    var cir12 = svgcanvas.append("svg:circle")
+   .attr("cx","342.997")
+   .attr("cy","549.556")
+   .attr("r","3.833")
+   .style("fill", "red")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "red");})
+   
+cir1.on("click", function(){
+   grupo1
+    .style("display","inline"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+
+	cir2.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","inline");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+  
+cir3.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","inline");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+  
+  cir4.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","inline");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+  
+  
+  cir5.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","inline");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+  
+  cir6.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","inline");
+    })
+  
+  cir7.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","inline");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+
+cir8.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","inline");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+	
+	cir9.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","inline");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+	
+	cir10.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","inline");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+	
+	
+	cir11.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","inline");
+	grupo12
+	.style("display","none");
+    })
+	
+	cir12.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","inline");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+
+var GRAM_neg = svgcanvas.append("svg:ellipse")
+   .attr("cx","84.5")
+   .attr("cy","306.39")
+   .attr("rx","64.5")
+   .attr("ry","42.5")
+   .style("fill", "#F9BBD1")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "#F9BBD1");})	
+
+var GRAM_pos = svgcanvas.append("svg:ellipse")
+   .attr("cx","499.5")
+   .attr("cy","306.39")
+   .attr("rx","64.5")
+   .attr("ry","42.5")
+   .style("fill", "#C5A9CB")
+   .on("mouseover", function() {d3.select(this).style("fill", "gray");})
+   .on("mouseout", function() {d3.select(this).style("fill", "#C5A9CB");})	   
+	
+	GRAM_neg.on("click", function(){
+   grupo1
+    .style("display","inline"); 
+   grupo2
+	.style("display","inline");
+   grupo3
+    .style("display","inline");	
+	grupo4
+	.style("display","inline");
+   grupo5
+    .style("display","none");
+	grupo6
+	.style("display","inline");
+   grupo7
+    .style("display","none");
+	grupo8
+	.style("display","none");
+   grupo9
+    .style("display","none");
+	grupo10
+	.style("display","none");
+   grupo11
+    .style("display","none");
+	grupo12
+	.style("display","none");
+    })
+	
+	GRAM_pos.on("click", function(){
+   grupo1
+    .style("display","none"); 
+   grupo2
+	.style("display","none");
+   grupo3
+    .style("display","none");	
+	grupo4
+	.style("display","none");
+   grupo5
+    .style("display","inline");
+	grupo6
+	.style("display","none");
+   grupo7
+    .style("display","inline");
+	grupo8
+	.style("display","inline");
+   grupo9
+    .style("display","inline");
+	grupo10
+	.style("display","inline");
+   grupo11
+    .style("display","inline");
+	grupo12
+	.style("display","inline");
+    })
+	
+
+
+	
+	
+   </script>
+</body>
+</html>
+
+   
