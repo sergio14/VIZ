@@ -1,7 +1,6 @@
 VIZ
 ===
 
-Materia Visualizacion - Data Mining
 
 http://sergio14.github.io/VIZ/bacterias
 
